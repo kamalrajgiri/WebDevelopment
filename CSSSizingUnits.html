@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: aqua;
+        }
+        .box{
+            border: 2px solid black ;
+            width: 1024px;
+            width: 80vw;
+            margin: 23px auto;
+            background-color: aquamarine;
+        }
+        .container{
+            width: 80vw;
+            box-sizing: border-box;
+            border: 2px solid black;
+            height: 80vh;
+            margin: 23px auto;
+            font-size: 16px;
+            
+            background-color: lightblue;
+        }
+        .container p{
+            padding: 10px;
+            font-size: 1.2rem;
+        }
+        .mycont{
+           background-color: red;
+           color: yellow;
+           font-size: 22px;
+           width: 100vmin;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">   
+        This is a box.
+    </div>
+    <div class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias nisi, hic placeat suscipit porro eligendi quos tenetur veritatis consequatur, voluptate accusantium? Officiis nesciunt blanditiis dolore est vero tempora tenetur commodi voluptas aliquam, rem unde, iusto autem saepe illo aspernatur maxime dicta quas assumenda. Tempore, provident!
+    </div>
+    <div class="container">
+        This is a container with a height of 80vh and a width of 80vw. lorem50
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Doloribus, cumque. Quos, voluptates. Doloremque, cumque. Doloribus, cumque. Doloremque, cumque. Doloribus, cumque. Doloremque, cumque.
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Doloribus, cumque. Quos, voluptates. Doloremque, cumque. Doloribus, cumque. Doloremque, cumque. Doloribus, cumque. Doloremque, cumque.</p>
+    </div>
+    <div class="mycont">I am another container</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        img{
+            width: 400px;
+            height: 400px;
+            object-fit: contain;
+            /* filter: blur(1px); */
+        }
+        .img1{
+            filter: brightness(132%);
+            filter: contrast(1.5);
+        }
+        .img2{
+            filter: brightness(132%) contrast(1);
+            /* filter: sepia(100%);
+             */
+            /* filter: grayscale(100%);
+             */
+             /* filter: hue-rotate(90deg); */
+             /* filter: invert(1); */
+             /* filter: opacity(0.5); */
+        }
+        .img3{
+            filter: drop-shadow(16px 16px 20px blue);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img1" src="./images/KamalProfile.jpeg" alt="">
+        <img class="img2" src="./images/Kamal.jpeg" alt="">
+        <img src="./images/RoseFlower.jpg" alt="" class="img3">
+    </div>
+</body>
+</html>

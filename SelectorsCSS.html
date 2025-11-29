@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors CSS</title>
+    <link rel="stylesheet" href="./SelectorsCSS.css" class="rel">
+    <style>
+
+        /*Elementary Selector*/
+        header{
+            color: blue;
+        }
+        /*Class Selector*/
+        .red{
+            color: red;
+        }
+        /* ID Selector*/
+        #green{
+            color: green;
+        }
+        /* Child Selector*/
+        div>span{
+            color: aqua;
+            background-color: yellow;
+        }
+        span{
+            background-color: rgb(196, 255, 200);
+        }
+        /*Descendent Selector*/
+        div p{
+            color: blueviolet;
+        }
+        /* Universal selector
+        *{
+            margin: 0;
+            padding: 0%;
+        } */
+/* Pseudo selectors*/
+a :visited{
+    color: yellow}
+    a:link{
+        color: green;
+    }
+    a:active{
+        background-color: red;
+    }
+    a:hover{
+        color: blue;
+    }
+    </style>
+</head>
+<body>
+    <header>Its Heder</header>
+    <div class="red">
+        I am a div.
+        <p>paragraph</p>
+    </div>
+    <span>I am span Outside div</span>
+    <div id="green">
+        I am second div.
+        <br>
+        <span>I am span inside div</span>
+        <br>
+        <a href="https://www.google.com">Go to Google</a>
+        <a href="https://www.facebook.com">Go to facebook</a>
+        <a href="https://www.figma.com">Go to figma</a>
+    </div>
+    <span>i am just a span</span>
+</body>
+</html>

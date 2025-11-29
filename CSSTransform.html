@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transform</title>
+    <style>
+      * {
+        margin: 5px;
+        padding: 5px;
+      }
+      .box {
+        height: 50px;
+        width: 50px;
+        background-color: beige;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* transform: rotate(0.5turn) ; */
+        /* transform: rotate(40deg) ; */
+        /* transform: scale(0.9); */
+        /* transform: skew(34deg); */
+        /* transform: translate(10px, 20px); */
+        /* transform: rotate(15deg) scale(1.5) translate(30px, 20px) skew(20deg); */
+        /* transform: rotate(50deg);
+            transform-origin: 0% 0%; */
+      }
+      .container {
+        width: 100vw;
+        height: 80vh;
+        border: 2px solid purple;
+      }
+      div {
+        margin: 2px;
+        padding: 2px;
+        background-color: beige;
+      }
+      main {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .box1{
+        height: 80px;
+        width: 120px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        background-color: beige;
+      }
+      .scalex:hover{
+        transform: scaleX(1.5);
+        transition: all 0.5s ease;
+      }
+        .scaley:hover{
+            transform: scaleY(1.5);
+            transition: all 0.5s ease;
+        }   
+        .scale:hover{
+            transform: scale(1.5);
+            transition: all 0.5s ease;
+        }
+        .translate:hover{
+            transform: translate(30px, 20px);
+            transition: all 0.5s ease;
+        }
+        .translatex:hover{
+            transform: translateX(30px);
+            transition: all 0.5s ease;
+        }
+        .translatey:hover{
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+        .matrix:hover{
+            transform: matrix(1, 0.5, -0.5, 1, 20, 30);
+            transition: all 0.5s ease;  
+        }
+        .rotate:hover{
+            transform: rotate(45deg);
+            transition: all 0.5s ease;
+        }
+        .skew:hover{
+            transform: skew(20deg, 10deg);
+            transition: all 0.5s ease;
+        }
+        .skewx:hover{
+            transform: skewX(20deg);
+            transition: all 0.5s ease;
+        }
+        .skewy:hover{
+            transform: skewY(20deg);
+            transition: all 0.5s ease;  
+        }
+        .matrix3d:hover{
+            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 30, 20, 0, 1);
+            transition: all 0.5s ease;  
+        }
+        .translate3d:hover{
+            transform: translate3d(30px, 20px, 0);
+            transition: all 0.5s ease;
+        }
+        .rotate3d:hover{
+            transform: rotate3d(1, 1, 0, 45deg);
+            transition: all 0.5s ease;
+        }
+        .rotatex:hover{
+            transform: rotateX(45deg);
+            transition: all 0.5s ease;
+        }
+        .rotatey:hover{
+            transform: rotateY(45deg);
+            transition: all 0.5s ease;
+        }
+        .rotatez:hover{
+            transform: rotateZ(45deg);
+            transition: all 0.5s ease;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">box</div>
+    </div>
+    <br /><br />
+    <hr />
+    <hr />
+    <br /><br />
+    <h2>CSS Transform Property</h2>
+    <main>
+      <div class="box1 scalex">Scale X</div>
+      <div class="box1 scaley">Scale Y</div>
+      <div class="box1 scale">Scale</div>
+      <div class="box1 translate">Translate</div>
+      <div class="box1 translatex">Translate X</div>
+      <div class="box1 translatey">Translate Y</div>
+      <div class="box1 matrix">Matrix</div>
+      <div class="box1 rotate">Rotate</div>
+      <div class="box1 skew">Skew</div>
+      <div class="box1 skewx">Skew X</div>
+      <div class="box1 skewy">Skew Y</div>
+      <div class="box1 matrix3d">Matrix 3D</div>
+      <div class="box1 translate3d">Translate 3D</div>
+      <div class="box1 rotate3d">Rotate 3D</div>
+      <div class="box1 rotatex">Rotate X</div>
+      <div class="box1 rotatey">Rotate Y</div>
+      <div class="box1 rotatez">Rotate Z</div>
+    </main>
+  </body>
+</html>
