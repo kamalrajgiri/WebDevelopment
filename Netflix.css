@@ -134,6 +134,12 @@ background-color: #3b3a3a;
 .input{
      background-color:rgb(23, 23, 23, 0.2);
 }
+
+section.second{   
+     display: flex;
+    flex-direction: row-reverse;
+}
+
 .secimg{
     /* position: relative; */
     width: 30vw;
@@ -148,6 +154,7 @@ background-color: #3b3a3a;
     width: 30vw;
     position: absolute;
 }
+
 .first{
     color: white;
     justify-content: center;
@@ -170,4 +177,74 @@ section.first>div{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.faq{
+    color: white;
+    text-align: center;
+    margin: 50px auto;
+}
+.box{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.box span{
+    background-color: rgb(23, 23, 23, 0.7);
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border: 0.5px solid gray;
+}
+.box span {
+    width: 700px;
+    max-width: 90vw;
+}
+.faq h2{
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+.favbox:hover{
+    transition:all 0.3s ease-in-out;
+    background-color: rgba(121, 117, 117, 0.9);
+
+
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    max-width: 60vw;
+    margin :auto;
+    padding: 10px;
+    gap: 15px;
+}
+footer{color: white;
+    padding: 10px;
+    margin-top: 10px;
+    max-width: 60vw;
+    margin-left: 20vh;}
+footer button{
+    padding: 7px 20px;
+    margin:auto;
+    font-weight: bold;
+    background: rgba(23, 23, 23, 0.3);
+    color: white;
+    border:0.5px solid gray;
+    border-radius: 15px;
+}
+footer h4,h3{
+    margin:  auto;
+    padding: 10px;
+    max-width: 60vw;
 }
