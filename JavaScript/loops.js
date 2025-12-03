@@ -1,0 +1,45 @@
+console.log("Loops in JavaScript");
+let a = 1;
+// console.log(a);
+// console.log(a+1);
+// console.log(a+2);
+
+// Using a for loop to print values from a to a+4
+console.log("Using for loop:");
+for (let i = 0; i < 5; i++) {
+  console.log(a + i);
+}
+
+// Using for...in loop to iterate over object properties
+let obj ={
+    name: "Alice",
+    role: "Developer",
+    company : "TechCorp"
+}
+for (const key in obj) {
+    const element = obj[key];
+    console.log(key , element)
+}
+// Using for...of loop to iterate over characters in a string
+for (const c of "kamal") {
+    console.log(c);
+}
+
+// Using a while loop to print values from a to a+4
+console.log("Using while loop:");
+let j = 0;
+while (j < 5) {
+    console.log(a + j);
+    j++;
+}
+
+// Using a do-while loop to print values from a to a+4
+console.log("Using do-while loop:");
+let k = 0;
+do {
+    console.log( k);
+    k++;
+} while (k < 5);
+
+console.log("Loops ended");
+console.log(84-58)

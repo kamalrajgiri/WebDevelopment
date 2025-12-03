@@ -54,3 +54,35 @@ o.salary = "100k";
 console.log(o);
 o.salary = "120k";
 console.log(o);
+
+// breakpoint;
+document.body.innerHTML += "<hr>";
+document.body.innerHTML += "<br>";
+
+document.body.innerHTML += "<hr>";
+document.body.innerHTML += "<br>";
+
+
+let e = "kamal";
+let f = 2087;
+console.log(e+f);
+let g = e + f;
+console.log(g);
+console.log(typeof e, typeof f, typeof g);
+const h=10; 
+let i=h;
+console.log(i);
+{
+    let i=20;
+    console.log(i);
+   
+}
+
+let K={
+    lotus : "flower", 
+    table : "furniture",
+    python : "programming language",
+    paper : "material",
+    javascript : "programming language"
+}
+console.log(K);
