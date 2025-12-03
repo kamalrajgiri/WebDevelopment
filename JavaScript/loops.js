@@ -43,3 +43,26 @@ do {
 
 console.log("Loops ended");
 console.log(84-58)
+
+
+// Exercise:
+//using for...in loop to print student marks
+var marks ={
+    harry : 98,
+    rohan : 70,
+    aakash : 90
+}
+console.log("Student Marks:")
+for (const grade in marks) {
+    const element = marks[grade];
+    console.log(grade, element);
+}
+
+// using for loop to print above marks
+console.log("Using for loop to print marks:");
+let keys = Object.keys(marks);
+for (let index = 0; index < keys.length; index++) {
+    const key = keys[index];
+    console.log(key, marks[key]);
+}
+

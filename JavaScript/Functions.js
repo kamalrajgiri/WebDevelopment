@@ -28,3 +28,39 @@ console.log(result2)
     console.log("i am an arrow function ", x)
  }
  fun1(7);
+
+// Exercise : 
+
+// print try again until user enter correct number
+console.log("Welcome to the number guessing game!")
+
+let usernumber = Number(prompt("Enter a number between 1 to 10"))
+
+function tryagain(usernumber){
+  let correctnumber = 7;
+  while (usernumber !== correctnumber){
+    console.log("try again")
+    usernumber = Number(prompt("Enter a number between 1 to 10"))
+  
+  } 
+    console.log("congratulations you have entered the correct number" + usernumber)
+}
+tryagain(usernumber);
+
+console.log("Welcome to the Mean Calculator!")
+let num1 = Number(prompt("Enter first number: "));
+let num2 = Number(prompt("Enter second number: "));
+let num3 = Number(prompt("Enter third number: "));
+let num4 = Number(prompt("Enter fourth number: "));
+let num5 = Number(prompt("Enter fifth number: "));
+
+function mean (num1, num2, num3, num4, num5){
+    let sum = num1 + num2 + num3 + num4 + num5;
+    let mean = sum / 5;
+    return mean;
+}
+let resultmean = mean(num1, num2, num3, num4, num5);
+console.log("The mean of the five numbers is: " + resultmean);  
+
+
+
