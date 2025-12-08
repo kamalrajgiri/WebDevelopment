@@ -44,6 +44,18 @@ function faultyCalculator(num1, num2, op) {
     }
 }
 
+// let obj ={
+//     "+": "-",
+//     "-": "/",
+//     "*": "+",
+//     "/": "**"
+// }
+// if (randomNum < 0.1) {
+//     result = eval(`${num1} ${obj[operation]} ${num2}`);
+// } else {
+//     result = eval(`${num1} ${operation} ${num2}`);
+// }
+
 let num1 = Number(prompt("Enter first number: "));
 let num2 = Number(prompt("Enter second number: "));
 let operation = prompt("Enter operation (+, -, *, /): ");
