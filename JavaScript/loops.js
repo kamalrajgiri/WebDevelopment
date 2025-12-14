@@ -66,3 +66,27 @@ for (let index = 0; index < keys.length; index++) {
     console.log(key, marks[key]);
 }
 
+let x =[1,22,333,4444,55555];
+for (let index = 0; index < x.length; index++) {
+    const element = x[index];
+    console.log(element);
+}
+x.forEach((value, index, arr) => {
+    console.log(value, index, arr);
+});
+
+let obje ={
+    a: 1,
+    b: 2,
+    c: 3
+}
+// for in loop to print obje
+for (const key in obje) {
+    if (Object.hasOwnProperty.call(obje, key)) ;
+    const element = obje[key];
+    console.log(key ,element)
+}
+// for of loop to print obje keys
+for (const element of x) {
+    console.log(element)
+}
