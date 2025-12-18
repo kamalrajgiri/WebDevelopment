@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+        .child{
+            background-color: aliceblue;
+            border: 2px solid blue;
+            padding: 20px;
+            width: 200px;
+            cursor: pointer ;
+        }
+        .childcontainer{
+            background-color: lightgray;
+            border: 2px solid gray;
+            padding: 20px;
+            width: 250px;
+            display: inline-block;
+            cursor: progress ;
+        }
+        .container{
+            background-color: lightyellow;
+            border: 2px solid orange;
+            padding: 20px;
+            width: 300px;
+            display: inline-block;
+            cursor: help ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="childcontainer">
+            <div class="child">
+                I am a child.
+            </div>
+        </span>
+    </div>
+    <script>
+        document.querySelector(".child").addEventListener("click", function(e){
+            e.stopPropagation();//to stop the event bubbling
+            alert("Child Clicked");
+        });
+        document.querySelector(".childcontainer").addEventListener("click", function(e){
+            e.stopPropagation();
+            alert("Child Container Clicked");
+        });
+        document.querySelector(".container").addEventListener("click", function(e){
+            alert("Container Clicked");
+        });
+        function getRandomColor(){
+            let letters="0123456789ABCDEF";
+            let color="#";
+            for(let i=0;i<6;i++){
+                color+=letters[Math.floor(Math.random()*16)];
+            }
+            return color;
+        }
+
+        // setInterval(()=>{
+        //    document.querySelector(".child").style.background=getRandomColor();
+        // },1000);
+
+        // let a = setInterval(()=>{
+        //    document.querySelector(".child").style.background=getRandomColor();
+        // },1000);
+        // console.log(a);
+
+        // clearInterval(a); //to stop the setInterval
+        let b = setTimeout(()=>{
+           document.querySelector(".child").style.background=getRandomColor();
+        },1000);
+        console.log(b);
+    </script>
+</body>
+</html>
