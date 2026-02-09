@@ -1,15 +1,15 @@
-/* body{
+body{
     color: red;
-} */
- /* p{
+}
+ p{
     background-color: blue;
  }
 
  a{
     background-color: aqua;
- } */
+ }
 
- /* .red{
+ .red{
    color: rgb(255, 0, 0);
  }
  .bg-yellow{
@@ -17,4 +17,4 @@
  }
  #firstdiv{
 color: rgb(0, 128, 47);
- } */
+ }
