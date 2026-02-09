@@ -71,3 +71,4 @@ function createcard ( title, channel, views , monthold, duration,thumbnil){
 
 }
 createcard(title,channel,views,monthold,duration,thumbnil)
+// createcard("title","channel",567,"6 years",54,"../images/ugrataratemple.JPG")

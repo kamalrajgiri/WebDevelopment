@@ -1,31 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Javascript 1</title>
     <style>
-       
+      /* Exercise 14 Hacker's Terminal */
+      /* .blink {
+        animation: blinker 1s linear infinite;
+       }
+       @keyframes blinker {
+        50% { opacity: 0; }
+       } */
+     /* body {
+        background-color: green;
+        color: white;
+        font-size: 30px;
+      } */
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Exercise 13 -->
     <!-- <script src="Exercise13_DynamicWebsiteBuilder.js"></script>  -->
 
-
     <!-- Event Bubbling, setInterval & setTimeout -->
-     <!-- <div class="container">
+    <!-- <div class="container">
         <div class="box">Hey i am a box</div>
      </div>
      <button id="btn">Change Content</button>
     <script src="Event-Bubbling_setInterval&setTimeout.js"></script> -->
 
-
-
     <!-- Callbacks & Promises -->
     <!-- <script src="Callbacks&Promises.js"></script> -->
-     <script src="promise.js"></script>
-    
-</body>
+    <!-- <script src="promise.js"></script> -->
+
+    <!-- Async Await & Fetch API -->
+    <!-- <script src="Async_Await&FetchAPI.js"></script> -->
+
+    <!-- Exercise 14 Hacker's Terminal -->
+    <!-- <script src="Exercise14_HackersTerminal.js"></script> -->
+    <!-- <div>Initializing hacking ...</div> -->
+    <!-- <script>
+      const randomdelay = () => {
+        return new Promise((resolve, reject) => {
+          timeout = 1 + 6 * Math.random();
+          setTimeout(() => {
+            resolve();
+          }, timeout * 1000);
+        });
+      };
+      async function main() {
+       let t = setInterval(() => {
+          let last = document.body.lastElementChild;
+          if (last.innerHTML.endsWith("...")) {
+            last.innerHTML = last.innerHTML.slice(0, last.innerHTML.length - 3);
+          } else {
+            last.innerHTML += ".";
+          }
+        }, 100);
+        let text = [
+          "Initialized hacking now reading your data",
+          "Reading your files ",
+          "Password files detected ",
+          "Sending all password and personal files to server ",
+          "Cleaning up ",
+        ];
+        for (const item of text) {
+          await additem(item);
+        }
+        await randomdelay();
+         clearInterval(t);
+      }
+      const additem = async (item) => {
+        await randomdelay();
+        let div = document.createElement("div");
+        div.innerHTML = item;
+        document.body.append(div);
+      };
+      main();
+    </script> -->
+
+    <!-- Javascript Try Catch and Error Handeling -->
+    <!-- <script src="JStryCatch&errorHandling.js"></script> -->
+
+    <!-- Classes and Objects - Object Oriented Programmin in Javascript -->
+    <!-- <script src="classes&ObjectsInJS.js"></script> -->
+
+
+
+    <script src="AdvancedJavascript.js"></script>
+  </body>
 </html>
